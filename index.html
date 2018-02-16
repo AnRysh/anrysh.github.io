@@ -1,0 +1,283 @@
+<!----------------------
+By giperfast.xyz
+
+https://vk.com/giperfast
+------------------------>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AnRysh</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/icons/2.ico" type="image/x-icon">																																																																									
+	<link rel="shortcut icon" sizes="196x196" href="images/icons/2.ico"">
+	
+	<!--------css--------->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="css/unknown.css">
+	
+	</head>
+
+	 <body>
+	 <!-----preloader---->
+  <div class="preloader">
+  <div class="pl-l"></div>
+  <div class="pl-r"></div>
+  <div class="pl-line">
+    <div></div>
+  </div>
+</div>
+
+
+ 
+
+
+	
+
+
+
+	 <!-------canvas--------->
+	 <div id="background">
+  <canvas id="stars"></canvas>
+</div>
+	 <div class="main-container">
+<div class="time" id="timedisplay">4:20:00</div>
+			<!----menu------>
+		 <div class="content"></div>		 
+<ul class="menu cf">
+<li>
+     
+    <a>FRIENDS</a>
+    <ul class="submenu">
+      <li><a href="https://codeinedogg.github.io" target="_blank" >codeindog</a></li>
+      <li><a href="https://fiftyff.github.io/" target="_blank" >FiftyFF</a></li>
+      <li><a href="#" target="_blank" >rellomien</a></li>
+      <li><a href="#" target="_blank" >Per4mance</a></li>
+    </ul>			
+  </li>
+  <li><a href="https://vk.com/anryshka" target="_blank">VK</a></li>
+  <li><a href="http://steamcommunity.com/profiles/76561198128725204/" target="_blank">STEAM</a></li>
+  <li><a href="" target="_blank">DISCORD</a></li>
+</ul>
+</div>
+<!---logo---->
+
+	 <div class="text-container">
+<span class="word">AnRysh</span>
+<span class="letter">Andrey</span>
+
+</div>
+
+
+
+			<img src="image.png" alt="giperfast" border="0">
+
+
+<!---player---->
+		<div class="img">   
+  <div id="bg">
+<div id="img">
+<video id="player" autoplay loop>
+      <source type="video/mp4" src="video/1.mp4">
+        </video>
+		<script>var vid=document.getElementById("player");vid.volume=0.5;</script> 
+		
+			   	</div>	
+</div> </div>
+			   
+			 			  
+			   <div class="btn1">
+<i onclick="document.getElementById('player').volume+=0.1" class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
+</div>
+				<div class="btn2">
+<i onclick="document.getElementById('player').volume-=0.1" class="fa fa-volume-down fa-lg" aria-hidden="true"></i> 
+</div>
+			 
+			   
+
+	<!----js----->
+  <script src='jquery-2.2.4.min.js'></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script  src="js/unknown.js"></script>
+	
+	
+<script>
+$(function() {
+	var title = document.title,
+		animSeq = ["/", "-", "\\", "|", "-"],
+		animIndex = 0,
+		titleIndex = 0;
+
+	function doInverseSpinZeroPitch() {
+		var loadTitle = title.substring(0, titleIndex);
+		if(titleIndex > title.length) {
+			animIndex = 0;
+			titleIndex = 0
+		}
+		if(animIndex > 3) {
+			titleIndex++;
+			animIndex = 0
+		}
+		document.title = loadTitle + animSeq[animIndex];
+		animIndex++
+	}
+	window.setInterval(doInverseSpinZeroPitch, 150);
+});
+</script>
+<script type="text/javascript">
+document.onkeydown = function(e) {
+e = e || window.event;
+if(e.keyCode == 85 | e.keyCode == 83) {
+return false;
+}
+return true;
+}
+    </script>
+    <script type="text/javascript">
+window.onkeydown = function(evt) {
+if(evt.keyCode == 123) return false;
+};
+
+window.onkeypress = function(evt) {
+if(evt.keyCode == 123) return false;
+};
+    </script>
+	<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+        }
+        return false;
+    };
+    function click() {
+        if (event.button == 2||event.button==3) {
+            oncontextmenu='return false';
+        }
+    }
+    document.onmousedown=click;
+    document.oncontextmenu = new Function("return false;")
+</script>
+		<script type='text/javascript'>
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+if(e.which == 17)
+isCtrl=false;
+}
+document.onkeydown=function(e)
+{
+if(e.which == 17)
+isCtrl=true;
+if((e.which == 85) || (e.which == 67) &amp;&amp; isCtrl == true)
+{
+	window.open("giperfast.php","_self");
+return false;
+}
+}
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+	<script type='text/javascript'>
+	function kill_ctrl_key_combo(e) {
+    var forbiddenKeys = new Array('a', 'c', 'x', 's', 'u');
+    var key;
+    var isCtrl;
+    if (window.event) {
+        key = window.event.keyCode;
+        if (window.event.ctrlKey) isCtrl = true;
+        else isCtrl = false;
+    } else {
+        key = e.which;
+        if (e.ctrlKey) isCtrl = true;
+        else isCtrl = false;
+    }
+    //if ctrl is pressed check if other key is in forbidenKeys array
+    if (isCtrl) {
+        for (i = 0; i < forbiddenKeys.length; i++) { //case-insensitive comparation
+            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+window.open("giperfast.php","_self");
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+function disable_selection(target) {
+    if (typeof target.style.MozUserSelect != "undefined") {
+        target.style.MozUserSelect = "none";
+    }
+    target.style.cursor = "default";
+}
+
+
+
+function enable_protection() {
+    disable_selection(document.body); //These will disable selection on the page
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = double_mouse; //These will disable double mouse on the page
+    document.oncontextmenu = function() {
+        return false;
+    }; //These will disable right click on the page
+    document.onkeydown = kill_ctrl_key_combo;
+}
+
+window.onload = function() { //These will enable protection on the page
+    enable_protection();
+};
+											 </script>
+
+ <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                window.open("giperfast.php","_self");
+            }
+            return false;
+    };
+    </script>
+	<script>
+	$(document).keydown(function(event){
+    if(event.keyCode==123){
+         window.open("giperfast.php","_self");
+		return false;
+		
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+              window.open("giperfast.php","_self");
+			 return false;
+			 
+    }
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
+</script>
+<script type="text/javascript">
+    document.ondragstart = noselect; 
+    // запрет на перетаскивание 
+    document.onselectstart = noselect; 
+    // запрет на выделение элементов страницы 
+    document.oncontextmenu = noselect; 
+    // запрет на выведение контекстного меню 
+    function noselect() {return false;} 
+</script>
+		
+	 </body></html>
