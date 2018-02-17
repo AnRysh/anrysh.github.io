@@ -29,14 +29,6 @@ setTimeout(function(){
 }, 1000)
 
 
-
-
-
-//*       STARS         *\\
-  }
-}
-
-
 //*    parallax    *\\
 
 $(function () {
